@@ -1,0 +1,270 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    font-family: NoiGroteskTrial-Medium;
+}
+@font-face{
+    font-family: NoiGroteskTrial-Regular;
+    src : url('fonts/NoiGroteskTrial-Regular.ttf') format('truetype');
+}
+@font-face{
+    font-family: NoiGroteskTrial-Medium;
+    src : url('fonts/NoiGroteskTrial-Medium.ttf') format('truetype');
+}
+@font-face{
+    font-family: NoiGroteskTrial-Bold;
+    src : url('fonts/NoiGroteskTrial-Bold.ttf') format('truetype');
+}
+@font-face{
+    font-family: NoiGroteskTrial-Black;
+    src : url('fonts/NoiGroteskTrial-Black.ttf') format('truetype');
+}
+.header{
+    width: 100%;
+    background-color: blueviolet;
+    text-align: center;
+    padding: 15px 0px;
+    color: white;
+    font-family: NoiGroteskTrial-Black;
+    font-weight: bolder;
+    font-size: xx-large;
+	background-color: #05192d;
+}
+h1{font-family: NoiGroteskTrial-Black;}
+.content{
+    width: 100%;
+    height: auto;
+    /*background-color: blue;
+	background-color: yellow;
+    /*border: 1px solid royalblue;*/
+    overflow: hidden;
+
+}
+.sidebar-left{
+    width: 50%;
+    height: auto;
+    /*background-color: red;*/
+    float: left;
+	padding: 50px;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+	font-family: NoiGroteskTrial-Medium;
+	/*border:1px #FFFFFF solid;*/
+}
+.sidebar-right{
+    width: 30%;
+    height: auto;
+    /*background-color: yellow;*/
+    float: right;
+    padding: 50px;
+}
+.view_content{
+    width: 100%;
+    height: auto;
+	overflow: hidden;
+	background-color: #7933ff;
+    color:#FFFFFF;
+    font-family: 'Courier New', Courier, monospace;
+	font-family: NoiGroteskTrial-Medium;
+}
+#side-left{
+    width: 90%;
+    height: auto;
+    float: left;
+	padding: 50px;
+    color:#FFFFFF;
+    font-family: 'Courier New', Courier, monospace;
+	font-family: NoiGroteskTrial-Medium;
+	font-size:24px;
+	/*border:1px #FFFFFF solid;*/
+} 
+.footer{
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 12px 0px;
+}
+input[type='text']{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    background-color: none;
+    border: 1px solid #000000;
+    background: none;
+}
+input[type='text']:focus {
+    border:none;
+    padding: 12px 20px;
+    margin: 8px 0;
+    transition: width 0.4s ease-in-out;
+    width: 100%;
+  }
+  
+.button{
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    box-shadow: 0 2.1px 1.3px rgba(0, 0, 0, 0.044),
+    0 5.9px 4.2px rgba(0, 0, 0, 0.054), 0 12.6px 9.5px rgba(0, 0, 0, 0.061),
+    0 25px 20px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+select{
+    width: 300px;
+    height: 25px;
+    border: 0px solid;
+    padding-left: 10px;
+    background-color: none;
+}
+
+body, table, th, td {
+    color:             #000000;
+	font-weight:normal;
+   /* background-color:  #ffffff;*/
+}
+table {width:100%;
+       padding: 0;
+	   margin: 0;
+	   }
+
+img {
+    border: 0;
+}
+
+table, th, td {
+    border-width:      0.1em;
+    border-color:      #ccc;
+    border-style:      solid;
+	border:1px solid #006699;
+}
+
+table {
+    border-collapse:   collapse;
+    border-spacing:    0;
+}
+
+th, td {
+    padding:           0.2em;
+}
+
+th {
+    font-weight:       bold;
+	background:#CCCCCC;
+    background-color:  #05192d;
+	text-decoration:none;
+	text-align:center;
+	/*font-weight:bold;*/
+	color:#FFFFFF;
+	border-style:none;
+}
+/*-----------------------MEDIA!!!-------------------------*/
+@media screen and (max-width: 478px){
+    body{}
+    .header{
+        width: 100%;
+        background-color: #05192d;
+        text-align: center;
+        padding: 15px 0px;
+        color: white;
+        font-family: NoiGroteskTrial-Black;
+        font-weight: bolder;
+        font-size: xx-large;
+    }
+    .content{
+        width: 100%;
+        height: auto;
+
+    }
+    .sidebar-left{
+        width: 100%;
+        height: auto;
+        /*background-color: red;*/
+        float: none;
+        padding: 20px;
+        color: black;
+        font-family: NoiGroteskTrial-Medium;
+    }
+    .sidebar-right{
+        width: 100%;
+        height: auto;
+        float: none;
+        padding: 20px;
+    }
+	.view_content{
+		width: 100%;
+		height: auto;
+		overflow: hidden;
+		background-color: #7933ff;
+		color:#FFFFFF;
+		font-family: 'Courier New', Courier, monospace;
+		font-family: NoiGroteskTrial-Medium;
+	}
+	#side-left{
+		width: 90%;
+		height: auto;
+		float: left;
+		padding: 20px;
+		color:#FFFFFF;
+		font-family: 'Courier New', Courier, monospace;
+		font-family: NoiGroteskTrial-Medium;
+		font-size:24px;
+		/*border:1px #FFFFFF solid;*/
+	} 
+    form{width: 80%; border: 0px solid #000000; padding: 0; margin: 0;}
+    .footer{
+        width: 100%;
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding: 12px 0px;
+    }
+    input[type='text']{
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        background-color: none;
+        border: 1px solid #000000;
+        background: none;
+    }
+    input[type='text']:focus {
+        border:none;
+        padding: 12px 20px;
+        margin: 8px 0;
+        transition: width 0.4s ease-in-out;
+        width: 100%;
+      }
+      
+    input[type='submit']{
+        background-color: #4CAF50; /* Green */
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        box-shadow: 0 2.1px 1.3px rgba(0, 0, 0, 0.044),
+        0 5.9px 4.2px rgba(0, 0, 0, 0.054), 0 12.6px 9.5px rgba(0, 0, 0, 0.061),
+        0 25px 20px rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+    }
+    select{
+        width: 100%;
+        height: 25px;
+        border: 0px solid;
+        padding-left: 10px;
+        background-color: none;
+    }
+    tr{
+        width: 100%;
+        border: 1px solid #000000;
+    }
+}
